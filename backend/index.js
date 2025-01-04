@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookieParser()); // Add this middleware
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://chat-application-d0qr.onrender.com",
         credentials: true,
     })
 );

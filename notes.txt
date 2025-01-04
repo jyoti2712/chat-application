@@ -1,0 +1,7 @@
+backend 
+express, mongoose, dotenv, bcryptjs, cookie-parser, cloudinary, socket.io, cors
+
+frontend 
+react-router-dom, react-hot-toast, npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p , -D daisyui@latest, axios, zustand, lucide-react, react-toastify, socket.io-client
+

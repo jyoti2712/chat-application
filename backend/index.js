@@ -11,6 +11,9 @@ import path from 'path';
 dotenv.config();
 // const app = express();
 
+const PORT = process.env.PORT;
+const __dirname = path.resolve();
+
 app.use(express.json());
 app.use(cookieParser()); // Add this middleware
 app.use(
@@ -23,8 +26,7 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-const PORT = process.env.PORT;
-const __dirname = path.resolve();
+
 
 if(process.env.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "../frontend/dist")));
